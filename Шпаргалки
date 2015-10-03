@@ -1,0 +1,2 @@
+json.dumps(data, ensure_ascii=False)                           Чтобы преобразовать структуру питона
+комба ctrl alt l формаитрует текст
