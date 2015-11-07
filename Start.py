@@ -23,12 +23,6 @@ z = {}
 surnames = []
 lstt = []
 
-for Stud_new in students_new:
-    ii = 0
-    ii = ii + 1
-    Stud_new
-
-
 print("*"*20, 1, "*"*20)##########################################################################
 
 for Stud_new in students_new:
@@ -182,10 +176,10 @@ for Teach_new in teachers_new:
 
 print("*"*20, 2, "*"*20)
 
-su = "Иванов"
+su = "Черный"
 for Stud_new in students_new:
-    if Stud_new['surname'] == su:
-        print(Stud_new['name'], Stud_new['surname'], Stud_new['middle_name'])
+    if Stud_new["surname"] == su:
+        print(Stud_new['surname'], Stud_new['name'],  Stud_new['middle_name'])
 
 
 
