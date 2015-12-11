@@ -1,194 +1,65 @@
 [
   {
-    "middle_name": "Игоревич",
-    "school": "67 школа",
+    "id": 1,
     "name": "Иван",
+    "middle_name": "Игоревич",
     "surname": "Иванов",
-    "birth_day": "12.07.1998",
-    "class": "5 А"
+    "school": "67 школа",
+    "class": "5 А",
+    "birth_day": "12.07.1998"
   },
   {
+    "id": 2,
+    "name": "Александр",
     "middle_name": "Петрович",
-    "school": "12 гимназия",
-    "name": "Александр",
     "surname": "Красный",
-    "birth_day": "01.12.1997",
-    "class": "6 А"
+    "school": "12 гимназия",
+    "class": "6 А",
+    "birth_day": "01.12.1997"
   },
   {
-    "middle_name": "Степанович",
-    "school": "12 гимназия",
+    "id": 3,
     "name": "Матвей",
+    "middle_name": "Степанович",
     "surname": "Петров",
-    "birth_day": "10.02.1997",
-    "class": "6 А"
+    "school": "12 гимназия",
+    "class": "6 А",
+    "birth_day": "10.02.1997"
   },
   {
-    "middle_name": "Валерьевич",
-    "school": "12 гимназия",
+    "id": 4,
     "name": "Артем",
-    "surname": "Кузин",
-    "birth_day": "10.02.1995",
-    "class": "7 Г"
-  },
-  {
-    "middle_name": "Исаакович",
-    "school": "12 гимназия",
-    "name": "Петр",
-    "surname": "Рузенштерн",
-    "birth_day": "21.05.1996",
-    "class": "6 Г"
-  },
-  {
     "middle_name": "Валерьевич",
-    "school": "12 гимназия",
-    "name": "Александр",
     "surname": "Кузин",
-    "birth_day": "21.05.1994",
-    "class": "8 Д"
+    "school": "12 гимназия",
+    "class": "7 Г",
+    "birth_day": "10.02.1995"
   },
   {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
+    "id": 5,
     "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
+    "middle_name": "Исаакович",
+    "surname": "Рузенштерн",
+    "school": "12 гимназия",
+    "class": "6 Г",
+    "birth_day": "21.05.1996"
   },
   {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
+    "id": 6,
+    "name": "Александр",
+    "middle_name": "Валерьевич",
+    "surname": "Кузин",
+    "school": "12 гимназия",
+    "class": "8 Д",
+    "birth_day": "21.05.1994"
   },
   {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
-  },
-  {
-    "middle_name": "Алексеевич",
-    "school": "67 школа",
-    "name": "Петр",
-    "surname": "Первый",
-    "birth_day": "06.06.1997",
-    "class": "7 В"
+    "id": 7,
+    "name": "Иван",
+    "middle_name": "Григорьевич",
+    "surname": "Иванов",
+    "school": "67 шк",
+    "class": "7 Б",
+    "birth_day": "11.02.1995"
   }
 ]

@@ -99,6 +99,26 @@ def add_class():
     return True
 
 
+def re_class_st():
+    global run
+    print("Goodbye")
+    run = False
+    return True
+
+
+def re__st():
+    global run
+    print("Goodbye")
+    run = False
+    return True
+
+
+def re__st():
+    global run
+    print("Goodbye")
+    run = False
+    return True
+
 load_data()
 
 menu = [
@@ -125,22 +145,32 @@ menu = [
             {
                 "text": "Редактировать классы",
                         "sub_menu": [
-            {
-                "text": "Удалить класс: с удалением всех учившихся в нём учеников",
-                "do": del_class
+                            {
+                                "text": "Удалить класс: с удалением всех учившихся в нём учеников",
+                                "do": del_class
+                            },
+                            {
+                                "text": "Добавить класс",
+                                "do": add_class
+                            },
+                            {
+                                "text": "Назад",
+                                "do": lambda: True
+                            },
+                        ]
             },
             {
-                "text": "Добавить класс",
-                "do": add_class
+                "text": "Редактировать ученика",
+                "do": [
+            {
+                "text": "Назад",
+                "do": re_class
             },
             {
                 "text": "Назад",
                 "do": lambda: True
-            },
-        ]
-            },
-            {
-                "text": "Редактировать ученика",
+            }
+                ]
             },
             {
                 "text": "Редактировать учителя",

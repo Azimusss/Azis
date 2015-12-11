@@ -1,30 +1,37 @@
-import json
-import os
+class Block:
+    def __init__(self, coords, width, height, color):
+        self.x = coords[0]
+        self.y = coords[1]
+        self.width = width
+        self.height = height
+        self.color = color
 
-teach = open(os.path.join('data', 'Students.json'))
-stud = open(os.path.join('data', 'Teachers.json'))
-stud_new = open(os.path.join('data', 'Students_new.json'))
-teach_new = open(os.path.join('data', 'Teachers_new.json'))
+    def get_area(self):
+        """
+        Метод возвращает площадь данного блока
+        """
+        return self.width*self.height
 
-students = json.load(teach)
-teachers = json.load(stud)
-students_new = json.load(stud_new)
-teachers_new = json.load(teach_new)
+    def set_width(self, new_width):
+        if type(new_width) is not int:    # Если тип не int
+            print("Error: Попытка задать некорректный тип свойства width")
+            return -1
+        elif new_width < 0:
+            print("Error: Попытка задать отритцательное зачение свойства widht")
+        else:
+            self.width = new_width
 
-lst = []
-studi_name = 'Александр'
-studi_suname = 'Красный'
-clss = '666 Б'
 
-# for Teach_new in teachers_new:
-#     lst.append(Teach_new['class'])  # помогает в сортировке переменных
-#     ln = len(lst)
-#     print(lst[ln - 1])
+redSmallBlock = Block((20, 40), 20, 10, "red")
+blueBigBlock = Block((60, 10), 120, 100, "blue")
 
-print("*"*20, 3, "*"*20)
 
-for Stud_new in students_new[:]:
-    if Stud_new['name'] == studi_name and Stud_new['suname'] == studi_suname:
-        students_new.remove(Stud_new)
+print("Ширина красного блока = ", redSmallBlock.width)
+print("Координата х синего блока = ", blueBigBlock.x)
 
-print("*"*20, 4, "*"*20)
+redSmallBlock.width = 40
+blueBigBlock.x = -20
+
+print("Площадь красного блока = ",redSmallBlock.width*redSmallBlock.height)
+print("Площадь синего блока = ",blueBigBlock.width*blueBigBlock.height)
+print(redSmallBlock)

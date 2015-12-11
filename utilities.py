@@ -1,9 +1,18 @@
 import math
 import os
+import json
 
 
 location = lambda x: os.path.join(
     os.path.dirname(os.path.realpath(__file__)), x)
+
+DIR = "data"
+
+
+def save(data, file_name):
+    file = open(os.path.join(DIR, file_name), 'w', encoding="UTF-8")
+    file.write(json.dumps(data, ensure_ascii=False))
+    file.close()
 
 
 def clear():
