@@ -8,6 +8,13 @@ class Vector:
     def get_len(self):
         return math.sqrt(self.x**2 + self.y**2)
 
+    @property
+    def len(self):
+        return self.get_len()
+
+    def as_point(self):
+        return self.x, self.y
+
     def rotate(self, angle):
         angle = math.radians(angle)
         x1 = self.x * math.cos(angle) - self.y * math.sin(angle)
@@ -29,12 +36,13 @@ class Vector:
         ys = self.y - other.y
         return Vector((xs, ys))
 
-    def as_point(self):
-        return self.x, self.y
-
     def __repr__(self):
         return "v (%s, %s)" % (self.x, self.y)
 
+    def normalize(self):
+        x = self.x / self.get_len()
+        y = self.y / self.get_len()
+        return Vector((x, y))
 
 if __name__ == "__main__":
     v1 = Vector((10, 10))
