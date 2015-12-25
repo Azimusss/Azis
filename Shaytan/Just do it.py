@@ -66,3 +66,10 @@ elif glasn_col_vo == soglas_col_vo:
 print("*" * 20, 5, "*" * 20)
 # Дано целое произвольное число. Вывести максимальное число, которое получится в результате умножения двух его цифр.
 
+chislo = 80237
+len_chislo = len(chislo)
+lit_m = []
+
+while i < len_chislo:
+    i = 0
+    i += 1
