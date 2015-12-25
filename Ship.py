@@ -11,16 +11,16 @@ NORMAL = 0
 TURN_LEFT = 1
 TURN_RIGHT = 2
 ACCEL = 3
-STOPPED = 4
+SPEED_DOWN = 4
 
 
 class Ship:
     def __init__(self, pos):
         self.pos = Vector(pos)
         self.image = pygame.Surface((100, 100))
-        self.speed_accel = 0.1                                    # Acceleration speed
+        self.accel = 0.2                                    # Acceleration speed
+        self.old_speed = None
         self.speed = Vector((1, 0))
-        self.accel = 0
         self.state = NORMAL
         self.draw()
 
@@ -33,24 +33,32 @@ class Ship:
             if event.key == pygame.K_UP:
                 self.state = ACCEL
             if event.key == pygame.K_DOWN:
-                self.state = STOPPED
+                self.state = SPEED_DOWN
+            if event.key == pygame.K_ESCAPE:
+                sys.exit()
         if event.type == pygame.KEYUP:
             self.state = NORMAL
 
     def update(self):
         if self.state == TURN_LEFT:
-            rl = -5
+            rl = -7
             self.speed = self.speed.rotate(rl)
         if self.state == TURN_RIGHT:
-            rr = 5
+            rr = 7
             self.speed = self.speed.rotate(rr)
         if self.state == ACCEL:                         # Ускорение
-            self.speed += self.speed.normalize() + Vector((self.speed_accel, 0))
-        if self.state == STOPPED:                       # Замедление
-            if self.speed.get_len() < (self.speed.normalize()*self.accel).len:
-                self.speed = Vector((0, 0))
+            if self.speed.len == 0:
+                self.speed = self.old_speed
             else:
+                self.speed += self.speed.normalize()
+        if self.speed.len == 0:
+            return
+        if self.state == SPEED_DOWN:                       # Остановка
+            if self.speed.len > self.accel:
                 self.speed -= self.speed.normalize()
+            else:
+                self.old_speed = self.speed
+                self.speed = Vector((0, 0))                 # Обнуление вектора скорости
         self.pos += self.speed
 
     def draw(self):
